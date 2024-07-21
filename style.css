@@ -1,0 +1,368 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background: black;
+    color: white; */
+}
+
+.logo img{
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+img{
+    height: 23px;
+}
+
+
+/* this is content of LEFT side */
+.left{
+    width: 30vw;
+    margin: 1px;
+    
+   padding: 3px;
+}
+
+.home{
+    color: rgb(131, 122, 122);
+    padding: 17px;
+    margin-bottom: 5px;   
+    height: 20vh;
+}
+
+.home ul li{
+    height: 32px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.home ul li:hover{
+    color: antiquewhite;
+}
+
+.library{
+    color: rgb(131, 122, 122);
+    padding: 17px;
+    height: calc(100vh - 20vh - 81px);
+    
+}
+
+.library div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.library ul{
+    list-style-type: none;
+    padding: 10px 10px;
+    margin: 10px;
+    background: rgba(78, 76, 76, 0.322);
+    color: white;
+    border-radius: 5px;
+    height: 37vh;
+    overflow-y: auto;
+}
+
+.library ul li{
+    background: rgb(27, 26, 26);
+    color: white;
+    margin-bottom: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    /* padding: 1px; */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: small;
+    transition: all 0.2s ease-out;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
+    height: 40px;
+}
+
+.library ul li p{
+    flex-grow: 1; /* Take up remaining space */
+    max-height: 40px; /* Fixed height */
+    overflow-x: auto; /* Enable vertical scrolling if content overflows */
+    margin: 0 5px;
+    padding-right: 15px; /* Add some padding for scrollbar */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+
+.library ul li img{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+
+.library ul li:hover{
+    background: #3a3838;
+    padding: 5px;
+}
+
+.library div img{
+    margin-right: 5px;
+}
+
+.paragraph{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.paragraph:hover{
+    color: antiquewhite;
+}
+
+.create{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.create input{
+     background:white;
+     border-radius: 10px;
+     height: 20px;
+     transition: all 0.3s ease;
+     border-color: rgb(110, 108, 108);
+     border: none;
+     outline: none;
+     
+}
+.create input:hover {
+     padding: 3px 15px;
+     border-radius: 15px;
+     
+}
+.create input:focus {
+     padding: 3px 15px;
+     border-radius: 15px;
+     background: grey;
+     
+}
+.create button {
+    padding: 5px;
+}
+
+.create button:hover{
+    padding: 7px; 
+}
+
+
+
+
+
+/* This is content of right box */
+
+.right{
+   color: white;
+   /* padding: 17px; */
+   width: 70vw;
+   height: calc(100vh - 7px);
+   margin: 3px;
+   margin-left: 1px;
+   position: relative;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 25px;
+}
+
+.left_arr{
+    margin-right: 7px;
+}
+
+.button{
+    font-size: smaller;
+    background: white;
+    border-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    padding: 7px 14px;
+    border-radius: 20px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.button:hover{
+    font-size: small;
+    border-style: none;
+    padding: 9px 16px;
+    border-radius: 20px;
+}
+
+.playlists {
+    height: 75vh;
+    overflow-y: scroll; 
+    overflow-x: hidden;  
+    padding: 5px 15px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    margin: 10px 5px;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+}
+
+.cardContainer{
+    display: flex;
+    gap: 33px;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+
+}
+
+.card{
+    font-family: "Roboto", sans-serif;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    gap: 5px;
+    width: 150px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    background: #0000002a;
+}
+
+.card:hover{
+    background: rgba(128, 128, 128, 0.233);
+}
+
+.playButton{
+    height: 45px;
+    position: absolute;
+    top: 140px;
+    right: 10px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.card .img{
+    height: auto;
+}
+
+.playMusic{
+    position: absolute;
+    width: 90%;
+    padding: 9px;
+    background: #5f5e5e41;
+    bottom: 0px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.playMusic img{
+    height: 30px;
+    cursor: pointer;
+}
+
+.name{
+    position: absolute;
+    left: 11px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+}
+
+#gif{
+    position: absolute;
+    right: 11px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+#letsPlay{
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+#progressBar{
+    width: 90vw;
+    margin-bottom: 10px;
+}
+
+#name1{
+    font-size: smaller;
+}
+
+
+
+
+
+
+
+/* For IE and Edge */
+body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* Global scrollbar styling for Webkit browsers */
+::-webkit-scrollbar {
+    width: 9px; /* Width of the vertical scrollbar */
+    height: 10px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #2b2b2b; /* Dark background for the track */
+    border-radius: 20px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555; /* Slightly lighter color for the thumb */
+    border-radius: 20px; /* Rounded corners for the thumb */
+    border: 2px solid #2b2b2b; /* Space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Lighter color on hover */
+}
+
+
+/* Mobile styles */
+/* Mobile styles */
