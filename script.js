@@ -178,7 +178,7 @@ function toggleMasterPlay() {
 }
 
 async function getPlayList1() {
-    let data = await fetch("/playlist1/");
+    let data = await fetch("https://falcon-abdullah.github.io/playlist1/");
     let content = await data.text();
 
     let tempDiv = document.createElement("div");
@@ -190,7 +190,7 @@ async function getPlayList1() {
     return linksArray;
 }
 async function getPlayList2() {
-    let data = await fetch("/playlist2/");
+    let data = await fetch("https://falcon-abdullah.github.io/playlist2/");
     let content = await data.text();
 
     let tempDiv = document.createElement("div");
